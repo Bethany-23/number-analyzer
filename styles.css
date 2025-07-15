@@ -75,3 +75,32 @@ button:hover {
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 }
+
+/* DARK MODE STYLES */
+body.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #d4f5f2;
+}
+
+body.dark h1 {
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 255, 170, 0.3);
+}
+
+body.dark input {
+  background-color: #ffffff;
+  color: #1de9b6; /* aqua green */
+  border: 2px solid #1de9b6;
+  box-shadow: 0 0 10px rgba(29, 233, 182, 0.3);
+}
+
+body.dark input::placeholder {
+  color: #55f0d4;
+  opacity: 0.6;
+}
+
+body.dark #result {
+  background-color: #ffffff;
+  color: #2a2a2a;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.08);
+}
