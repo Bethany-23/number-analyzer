@@ -27,4 +27,8 @@ function isPrime(num){
         if (num % i === 0) return false;
     }
     return true;
-}
+};
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+};
