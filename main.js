@@ -32,8 +32,7 @@ function isPrime(num){
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
 
-  const themeButton = document.getElementById("themeToggle");
-  themeButton.innerText = document.body.classList.contains("dark") 
-    ? " Light Mode" 
-    : " Dark Mode";
+  // Update checkbox if dark mode was toggled programmatically
+  const checkbox = document.getElementById("themeToggleCheckbox");
+  checkbox.checked = document.body.classList.contains("dark");
 }
