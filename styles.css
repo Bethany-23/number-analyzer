@@ -104,3 +104,28 @@ body.dark #result {
   color: #2a2a2a;
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.08);
 }
+
+#themeToggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 14px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+#themeToggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Style it for dark mode too */
+body.dark #themeToggle {
+  border: 2px solid #1de9b6;
+  color: #1de9b6;
+}
